@@ -105,7 +105,7 @@ class App extends Component {
                />
                <button data-testid="calculate_relationship" onClick={this.handleClick}>Calculate Future Relationship</button>
                <button data-testid="clear" onClick={this.handleClear}>Clear</button>
-               <h1>{this.state.ans}</h1>
+               <h3>{this.state.ans}</h3>
             </div>
         )
     }
