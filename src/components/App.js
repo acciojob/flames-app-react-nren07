@@ -39,7 +39,10 @@ class App extends Component {
     getRelationshipStatus(name1, name2) {
         // Helper function to create a frequency map of characters in a string
 
-        console.log({name1},{name2});
+        if(!name1 || !name2){
+            
+            return "Please Enter valid input";
+        }
         function createFrequencyMap(str) {
             const freqMap = {};
             for (const char of str) {
